@@ -264,6 +264,19 @@ footer a:hover {
   color: #14110f;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 575.98px) {
   .hero-section {
     padding-top: 5rem;
