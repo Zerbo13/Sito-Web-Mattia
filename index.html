@@ -3,20 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sito Mattia Zerbini</title>
+    <meta
+      name="description"
+      content="Portfolio personale di Mattia Zerbini - sviluppatore web, progetti front-end e back-end."
+    />
+    <title>Mattia Zerbini | Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./assets/MZ-Photoroom.png" style="width: 100px"
-        /></a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img
+            src="./assets/MZ-Photoroom.png"
+            alt="Logo Mattia Zerbini"
+            width="56"
+            height="56"
+          />
+          <span class="fs-5 mb-0">Mattia Zerbini</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,296 +44,395 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#chiSono"
-                >Chi sono</a
-              >
+              <a class="nav-link" href="#chiSono">Chi sono</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#competenze"
-                >Competenze</a
-              >
+              <a class="nav-link" href="#competenze">Competenze</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#progetti"
-                >Progetti</a
-              >
+              <a class="nav-link" href="#formazione">Formazione</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contatti"
-                >Contatti</a
-              >
+              <a class="nav-link" href="#progetti">Progetti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatti">Contatti</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <main>
-      <section class="bg-dark text-white text-center p-5">
+      <section id="home" class="hero-section text-white text-center">
         <div class="container">
-          <h1 class="display-4">Ciao sono Mattia Zerbini</h1>
+          <h1 class="display-4 fw-bold">Ciao, sono Mattia Zerbini</h1>
           <p class="lead">
-            Diplomato in Informatica & Appassionato di sviluppo web
+            Diplomato in Informatica e appassionato di sviluppo web. <br />
+            Creo pagine professionali e applicazioni moderne.
           </p>
-          <a href="#contatti" class="btn btn-primary mt-3">Contattami</a>
+          <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+            <a href="#progetti" class="btn btn-light btn-lg"
+              >Scopri i miei progetti</a
+            >
+            <a href="#contatti" class="btn btn-outline-light btn-lg"
+              >Contattami</a
+            >
+          </div>
         </div>
       </section>
 
-      <section id="chiSono" class="p-5 bg-body-secondary">
+      <section id="chiSono" class="py-5 bg-body-secondary">
         <div class="container">
-          <h2>Chi sono</h2>
-          <p>
-            Sono un giovane diplomato in informatica con una forte passione per
-            la tecnologia e lo sviluppo software. Durante il mio percorso di
-            studi ho acquisito competenze in programmazione, gestione di
-            database e reti informatiche. Mi piace creare interfacce pulite,
-            responsive e funzionali. Mi sto specializzando in HTML, CSS,
-            JavaScript, Bootstrap e Back-end; tramite il
-            corso 'EPICODE Institute of Technology'. Mi piace affrontare nuove
-            sfide e imparare continuamente per migliorare le mie capacità
-            tecniche e professionali.
-          </p>
-        </div>
-      </section>
-
-      <section id="competenze" class="bg-dark p-5 text-white">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h2>Le mie competenze</h2>
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6">
+              <span class="section-title">Chi sono</span>
+              <h2 class="mb-3">Sviluppatore web in crescita</h2>
               <p>
-                Ho maturato competenze pratiche nello sviluppo front-end e
-                back-end, curando sia la parte grafica che quella logica delle
-                applicazioni. Utilizzo diversi linguaggi e strumenti per
-                realizzare progetti dinamici e responsive. Qui di seguito
-                elencherò le mie competenze che ho affrontato nel mio percorso
-                di superiori.
+                Sono un giovane diplomato in informatica con una forte passione
+                per la tecnologia e lo sviluppo software. Durante il mio
+                percorso ho acquisito conoscenze in programmazione, database e
+                reti. Cerco di costruire interfacce pulite, responsive e
+                intuitive.
               </p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Gestione versioni con Git/GitHub</li>
-                <li>Database MySQL e POSTGES</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Spring/SpringBoot</li>
-                <li>C++ (base)</li>
-              </ul>
+              <p>
+                Mi sono specializzato in HTML, CSS, JavaScript, Bootstrap, React
+                e backend con Java, Spring Boot, MySQL e PostgreSQL.
+              </p>
             </div>
-
-            <div class="col-md-4">
-              <div
-                class="d-flex justify-content-center align-items-center flex-wrap"
-              >
-                <img
-                  src="./assets/HTML5_logo.png"
-                  alt="Logo HTML5"
-                  class="img-fluid mx-3 my-3"
-                  style="max-width: 100px"
-                />
-                <img
-                  src="./assets/Java_Logo.svg"
-                  alt="Logo Java"
-                  class="img-fluid mx-3 my-3"
-                  style="max-width: 100px"
-                />
-                <img
-                  src="./assets/bootstrap-Photoroom.png"
-                  alt="Logo Bootstrap"
-                  class="img-fluid mx-4 my-4"
-                  style="max-width: 100px"
-                />
+            <div class="col-lg-6">
+              <div class="card card-project p-4 shadow-sm border-0">
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="./assets/MZ-Photoroom.png"
+                    alt="Foto Mattia"
+                    class="img-fluid rounded-circle"
+                    width="100"
+                    height="100"
+                  />
+                  <div>
+                    <h3 class="h5 mb-2">Profilo</h3>
+                    <p class="mb-2 text-muted">
+                      Sviluppo soluzioni front-end e back-end con cura per i
+                      dettagli e attenzione all'usabilità.
+                    </p>
+                    <p class="mb-0 text-muted">
+                      Motivato, organizzato e pronto a nuove sfide tecniche.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--PROGETTI-->
-      <section id="progetti" class="p-5 bg-body-secondary">
+      <section id="formazione" class="py-5">
         <div class="container">
-          <h2>I miei progetti</h2>
-          <p>Questi sono alcuni dei miei progetti, quelli che mi hanno appassionato di più.</p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
+          <div class="text-center mb-5">
+            <span class="section-title">Formazione</span>
+            <h2 class="mt-3">Percorso scolastico e corsi di formazione</h2>
+            <p class="text-muted mx-auto" style="max-width: 720px">
+              Formazione tecnica che supporta la mia esperienza nello sviluppo
+              web front-end, back-end e full-stack.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card card-feature h-100 p-4">
+                <h5 class="mb-2">Frontend Developer Academy / Vibe Coding</h5>
+                <p class="text-muted mb-1">Luglio 2026 - Agosto 2026</p>
+                <p class="mb-2">BC-Soft</p>
+                <p class="mb-0 text-muted">
+                  Corso full-time su React e sviluppo front-end. Ho rafforzato
+                  UX/UI, HTML, CSS e JavaScript, iniziando a lavorare con React
+                  e gli strumenti Vibe Coding. Ho perfezionato l'uso di Git e
+                  GitHub per la gestione del codice.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card card-feature h-100 p-4">
+                <h5 class="mb-2">Master Full-Stack Developer</h5>
+                <p class="text-muted mb-1">Settembre 2025 - Aprile 2026</p>
+                <p class="mb-2">EPICODE Institute of Technology</p>
+                <p class="mb-0 text-muted">
+                  Percorso intensivo di 6 mesi in remoto, con focus sullo
+                  sviluppo web full-stack. Ho acquisito competenze in front-end
+                  (HTML, CSS, JavaScript) e back-end (Java), usando React,
+                  Spring e PostgreSQL. Ho lavorato su progetti individuali e di
+                  gruppo con Git e GitHub.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card card-feature h-100 p-4">
+                <h5 class="mb-2">
+                  Diploma di Istruzione Tecnica Industriale diramzione
+                  Informatica
+                </h5>
+                <p class="text-muted mb-1">2020 - 2025</p>
+                <p class="mb-2">I.T.I.S. S. Cannizzaro, Colleferro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="competenze" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="section-title">Competenze</span>
+            <h2 class="mt-3">Tecnologie e strumenti</h2>
+            <p class="text-muted mx-auto" style="max-width: 720px">
+              Lavoro con stack moderni per costruire siti web reattivi, app
+              interattive e servizi backend scalabili.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-10 text-center">
+              <p>
+                Ho sviluppato progetti front-end e back-end, curando sia la
+                parte grafica sia la logica. Utilizzo metodologie moderne e
+                versioning con Git per mantenere il codice ordinato e
+                collaborativo.
+              </p>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Spring Boot</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">PHP</span>
+                <span class="skill-badge">Frontend</span>
+                <span class="skill-badge">Backend</span>
+                <span class="skill-badge">Vibe Coding</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="progetti" class="py-5 bg-body-secondary">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="section-title">Progetti</span>
+            <h2 class="mt-3">Alcuni lavori realizzati</h2>
+            <p class="text-muted mx-auto" style="max-width: 720px">
+              Una selezione dei miei progetti, dal front-end al back-end, con
+              soluzioni responsive e funzionali.
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
                   <h5 class="card-title">Sito di streaming</h5>
                   <p class="card-text">
-                    Replica di un noto sito di streaming di film e serie tv,
-                    creato usando bootstrap.
+                    Replica di un noto sito di streaming per film e serie TV con
+                    Bootstrap.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/U2-W2-D5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
                   <h5 class="card-title">App meteo</h5>
                   <p class="card-text">
-                    Creazione di un app meteo per il mio paese, creato usando le
-                    API e JavaScript.
+                    App meteo per il mio paese, sviluppata con API e JavaScript.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/Esercizio_prova_meteo"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
                   <h5 class="card-title">Replica sito Medium</h5>
                   <p class="card-text">
-                    Creazione di un sito web di giornalistica creato usando HTML
-                    e CSS.
+                    Replica grafica di un sito di giornalismo con HTML e CSS.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/U2-W1-D5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
+                    >Vedi su GitHub</a
                   >
-                    Vedi su GitHub
-                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
-                  <h5 class="card-title">Sito di E-commerce</h5>
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Sito di e-commerce</h5>
                   <p class="card-text">
-                    Creazione di un sito web di e-commerce personalizzato,
-                    creato usando HTML, BOOTSTRAP E JavaScript.
+                    Shop online personalizzato creato con HTML, Bootstrap e
+                    JavaScript.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/U2-W3-D5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
             </div>
-              <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
                   <h5 class="card-title">Apple Music replica</h5>
                   <p class="card-text">
-                    Replica di Apple music nota applicazione usata da apple per la musica,
-                    creato usando HTML, BOOTSTRAP, JavaScript e REACT.
+                    Replica di Apple Music con HTML, Bootstrap, JavaScript e
+                    React.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/U3-W3-D5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
-              </div>
-               <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
+            </div>
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
                   <h5 class="card-title">Gestionale giochi</h5>
                   <p class="card-text">
-                    Sito fatto in backend per la gestione di giochi che siano online o da tavolo,
-                    creato usando Java.
+                    Backend Java per la gestione di giochi online e da tavolo.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/u4-w2-d5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
             </div>
-              <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
-                  <h5 class="card-title">Gestionale per appuntamenti</h5>
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Gestionale appuntamenti</h5>
                   <p class="card-text">
-                    Sito fatto in backend per la gestione di appuntamenti,
-                    creato usando Java, Spring, Postman e Postgres.
+                    Backend con Java, Spring Boot, Postman e PostgreSQL.
                   </p>
                   <a
                     href="https://github.com/Zerbo13/U5-W2-D5"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-primary btn-sm"
                     >Vedi su GitHub</a
                   >
                 </div>
               </div>
             </div>
-              <div class="col-md-4">
-              <div class="card mb-4 rounded-2">
-                <div class="card-body bg-dark text-white rounded-2">
-                  <h5 class="card-title">Gestionale prenotazioni campi da padel</h5>
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Jacopo Costruzioni</h5>
                   <p class="card-text">
-                    Sito fatto in backend e front-end per la gestione delle prenotazione di un circolo di padel,
-                    creato usando Java, Spring, Postman e Postgres per il lato backend ed invece per il frontend ho utilizzato React, Bootstrap e Javascript.
-                    Questo sito è stato anche deployato utilizzando koyeb, per il backend, e vercel, per il frontend. Lo si puo trovare digitando https://zerbopadel.vercel.app .
+                    Sito portfolio per un'azienda edile fatto con frontend HTML,
+                    CSS, JavaScript e Bootstrap
                   </p>
                   <a
-                    href="https://github.com/Zerbo13/Capstone"
-                    class="btn btn-outline-light btn-sm"
-                    >Vedi su GitHub il backend</a>
-                  <a
-                    href="https://github.com/Zerbo13/Capstone-Frontend"
-                    class="btn btn-outline-light btn-sm"
-                    >Vedi su GitHub il frontend</a>
+                    href="https://github.com/Zerbo13/SitoJacopoCostruzioni"
+                    class="btn btn-primary btn-sm"
+                    >Vedi su GitHub</a
+                  >
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card card-project h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Prenotazioni circolo padel</h5>
+                  <p class="card-text">
+                    Full-stack con React, Java, Spring e PostgreSQL, deploy su
+                    Vercel e Koyeb.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a
+                      href="https://github.com/Zerbo13/Capstone"
+                      class="btn btn-primary btn-sm"
+                      >Backend</a
+                    >
+                    <a
+                      href="https://github.com/Zerbo13/Capstone-Frontend"
+                      class="btn btn-outline-primary btn-sm"
+                      >Frontend</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" class="py-5 bg-dark text-white">
+        <div class="container">
+          <div class="text-center mb-4">
+            <span class="section-title">Contatti</span>
+            <h2 class="mt-3">Scrivimi</h2>
+            <p class="text-muted mx-auto" style="max-width: 680px">
+              Sono disponibile per stage, collaborazioni e richieste di lavoro.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <ul class="list-unstyled text-center mb-0">
+                <li class="mb-3">
+                  📧
+                  <a
+                    href="mailto:zermatty6@gmail.com"
+                    class="text-white text-decoration-none"
+                    >zermatty6@gmail.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  💼
+                  <a
+                    href="https://www.linkedin.com/in/mattia-zerbini-ab24a4372/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white text-decoration-none"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  💻
+                  <a
+                    href="https://github.com/Zerbo13"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white text-decoration-none"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!--CONTATTI-->
-    <footer id="contatti" class="bg-dark text-white text-center py-4">
-      <h2 class="mb-4">Contattami</h2>
-
-      <div
-        class="d-flex justify-content-center align-items-center flex-wrap gap-4"
-      >
-        <p class="mb-0">
-          📧
-          <a
-            href="mailto:zermatty6@gmail.com"
-            class="text-white text-decoration-none"
-          >
-            zermatty6@gmail.com
-          </a>
-        </p>
-
-        <p class="mb-0">
-          💼
-          <a
-            href="https://www.linkedin.com/in/mattia-zerbini-ab24a4372/"
-            target="_blank"
-            class="text-white text-decoration-none"
-          >
-            LinkedIn
-          </a>
-        </p>
-
-        <p class="mb-0">
-          💻
-          <a
-            href="https://github.com/settings/profile"
-            target="_blank"
-            class="text-white text-decoration-none"
-          >
-            GitHub
-          </a>
-        </p>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-1">© 2026 Mattia Zerbini - Portfolio personale.</p>
       </div>
     </footer>
 
@@ -327,5 +441,32 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const hero = document.querySelector(".hero-section");
+      const updateNavbar = () => {
+        const threshold = hero.offsetHeight - navbar.offsetHeight;
+        if (window.scrollY > threshold) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      };
+
+      window.addEventListener("scroll", updateNavbar);
+      window.addEventListener("resize", updateNavbar);
+      updateNavbar();
+    </script>
+
+    <a
+      href="https://wa.me/393292510501?text=Ciao%20Mattia%2C%20vorrei%20parlare%20con%20te"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chatta su WhatsApp"
+    >
+      <i class="bi bi-whatsapp whatsapp-icon"></i>
+      <span>Contattami su WhatsApp</span>
+    </a>
   </body>
 </html>
